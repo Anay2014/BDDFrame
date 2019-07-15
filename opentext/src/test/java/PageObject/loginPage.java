@@ -34,7 +34,7 @@ public class loginPage extends Commonpage {
 //		sign.click();
 		clickElement(sign);
 	}
-	public void enterUsername(String username) throws InterruptedException {
+	public void enterUsername() throws InterruptedException {
 //		Set<String> win=driver.getWindowHandles();
 //		Iterator<String> itr=win.iterator();
 //		String parentId=itr.next();
@@ -42,7 +42,7 @@ public class loginPage extends Commonpage {
 		Thread.sleep(8000);
 //		driver.manage().window().maximize();
 		WebElement un = driver.findElement(By.id("identifierId"));
-		un.sendKeys(username);
+		un.sendKeys("mohan_d@truweight.in");
 	}
 	
 	public void enterNext() throws InterruptedException {

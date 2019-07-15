@@ -8,11 +8,11 @@ import cucumber.api.java.en.When;
 public class StepDefination {
 	loginPage l=new loginPage();
 	
-	@Given("^i enter Username as <username>$")
+	@Given("^i enter Username$")
 	public void enterUsername() throws InterruptedException {
 		l.launchURL();
 		l.Signin();
-		l.enterUsername(username);
+		l.enterUsername();
 		
 		
 	}

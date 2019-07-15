@@ -1,9 +1,5 @@
 Feature: login feature
-Scenario Outline: login to photo app
-  Given i enter Username "<username>"
+Scenario: login to photo app
+  Given i enter Username
    When i enter password
     Then logged in
-    
-    Examples:
-    |username|
-    |mohan|
