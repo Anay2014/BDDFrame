@@ -5,8 +5,13 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "features"
-		,glue={"stepdefination"}
+		features = "C:\\Users\\truweight\\git\\BDDFrame\\opentext\\features\\campagins.feature"
+		,glue={"stepdefination"},
+		plugin = { "pretty" },
+		monochrome = true,
+		dryRun=false,
+		strict=true
+		
 		)
 
 public class TestRunner {

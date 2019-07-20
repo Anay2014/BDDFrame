@@ -42,7 +42,7 @@ public class loginPage extends Commonpage {
 		Thread.sleep(8000);
 //		driver.manage().window().maximize();
 		WebElement un = driver.findElement(By.id("identifierId"));
-		un.sendKeys("mohan_d@truweight.in");
+		un.sendKeys("abcd");
 	}
 	
 	public void enterNext() throws InterruptedException {
@@ -53,6 +53,10 @@ public class loginPage extends Commonpage {
 	public void enterpassword() {
 		WebElement pw = driver.findElement(By.xpath("(//*[text() ='Enter your password']"));
 		pw.sendKeys("Truweight@1988");
+	}
+	public void enterpassword1(String password) {
+		WebElement pw = driver.findElement(By.xpath("(//*[text() ='Enter your password']"));
+		pw.sendKeys(password);
 	}
 	public void clickLogin() {
 		WebElement lg =driver.findElement(By.xpath("//*[text()=\"Next\"]"));
